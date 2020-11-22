@@ -8,11 +8,14 @@ const AddNewProduct = async (product) => {
       name: product.name,
       id: product.id,
       price: product.price,
-      date: firebase.firestore.FieldValue.serverTimestamp(),
+      date: product.date,
       available: product.available,
       productAmounts: product.amount,
       color: product.color,
       brand: product.brand,
+      photo: product.photo,
+      description: product.description,
+      
     })
     // .set(product)
     .then((d) => {
