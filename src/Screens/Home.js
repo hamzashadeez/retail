@@ -63,7 +63,6 @@ function Home() {
                 <Link style={{ textTransform: "capitalize" }}>
                   ACCOUNT{" "}
                   <span>
-                    {" "}
                     <FaUser />
                   </span>
                 </Link>
@@ -72,7 +71,6 @@ function Home() {
                 <Link style={{ textTransform: "capitalize" }}>
                   CART{" "}
                   <span>
-                    {" "}
                     <FaShoppingCart />
                   </span>
                 </Link>

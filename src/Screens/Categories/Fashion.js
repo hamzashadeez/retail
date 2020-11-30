@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 import { FaArrowLeft } from "react-icons/fa";
-import ProductCard from "../../Components/ProductCard";
+import Card from "../../Components/Card";
 import { Link } from "react-router-dom";
 function Fashion() {
   const [data, setData] = useContext(DataContext);
@@ -24,15 +24,16 @@ function Fashion() {
           FASHION
         </h1>
       </div>
-      <div className="m-2">
+      <div className="m-2 pt-1">
         {data.map((product) => {
           if (product.category === "fashion") {
             console.log(product.name);
             return (
-              <ProductCard
+              <Card
                 name={product.name}
                 price={product.price}
                 img={product.photo}
+                category={product.category}
               />
             );
           }

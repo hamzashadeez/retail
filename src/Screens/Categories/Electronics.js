@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 import { FaArrowLeft } from "react-icons/fa";
-import ProductCard from "../../Components/ProductCard";
+import Card from "../../Components/Card";
 import { Link } from "react-router-dom";
 function Electronics() {
   const [data, setData] = useContext(DataContext);
@@ -33,18 +33,17 @@ function Electronics() {
         </h1>
       </div>
       <div
-        className="m-2 bg-light"
+        className="m-2"
         style={{
-          // display: "grid",
-          // gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-          width: "100%",
+          // width: "100%",
+          paddingTop: "20px"
         }}
       >
         {data.map((product) => {
           if (product.category === "electronics") {
             console.log(product.name);
             return (
-              <ProductCard
+              <Card
                 name={product.name}
                 price={product.price}
                 img={product.photo}

@@ -60,7 +60,7 @@ function Flash() {
           color: "gray",
         }}
       >
-        Spree
+        Spreere
       </h3>
     </div>
   );
