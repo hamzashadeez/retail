@@ -36,3 +36,313 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.navigation {
+  height: 51px;
+  background: #024dda;
+} 
+.nav-list li Link{
+  text-transform: uppercase;
+
+}
+.footer ul{
+  padding: 0;
+
+}
+.footer ul li a{
+  color: black;
+  font-size: 16px;
+}
+.footer ul li a:hover{
+  color: black;
+
+}
+.footer h6{
+  font-weight: 600;
+  font-size: 18px;
+
+}
+.footer ul li{
+  list-style: none;
+  margin-bottom: 7px;
+
+}
+.has-search .form-control {
+    padding-left: 0.975rem;
+    border-radius: 3px;
+    width: 235px;
+
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    top: 0;
+    right: 0;
+}
+.form-group{
+  margin-bottom: 0;
+}
+.has-search{
+  position: relative;
+  margin-top: 6px;
+}
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 51px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+/* margin-left: 105px; */
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-container {
+
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+.border_ccc{
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+  margin-left: 15px;
+
+}
+article .row .col-lg-3 img{
+  margin-bottom: 12px;
+  
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 51px;
+  background: #024dda;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #2581DC;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #262626;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+article {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.space-between{
+	justify-content: space-between;
+}
+.fs-15{
+	font-size: 1.2em;
+  margin-left: 12px;
+
+}
+.font-weight500{
+	font-size: 16px;
+    font-weight: 500
+}
+.add_card{
+  border: 1px solid black;
+    background: transparent;
+    border-radius: 50px;
+    padding: 2px 28px;
+    padding-bottom: 5px;
+    /* width: 144px; */
+    font-size: 15px;
+    font-weight: bold;
+}
+.paddin_5 .w20{
+  padding: 5px;
+}
+.w20{
+  padding: 13px 29px;
+
+max-width: 20%;
+flex: 0 0 20%;
+}
+.w20 h4{
+  margin: 14px 0;
+
+}
+
+.container_link {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.mb-2{
+    margin-bottom: 5em !important;
+}
+
+.centered {
+     position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+@media (max-width: 767px) {
+  .w20{
+      padding: 13px 29px;
+
+    max-width: 100%;
+    flex: 0 0 100%;
+
+  }
+}

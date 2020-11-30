@@ -1,14 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Main from './Main';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import AppStack from "./AppStack";
+import { UserProvider } from "./Context/UserContext";
+import { DataProvider } from "./Context/DataContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Main />
-      </header>
+      <UserProvider>
+        <DataProvider>
+          <AppStack />
+        </DataProvider>
+      </UserProvider>
     </div>
   );
 }
