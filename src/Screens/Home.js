@@ -23,7 +23,7 @@ function Home() {
       <section className="navigation">
         <div className="nav-container">
           <div className="brand">
-            <Link style={{ textTransform: "capitalize" }}>Spree</Link>
+            <Link style={{ textTransform: "capitalize" }}>SPREERE</Link>
           </div>
           <nav>
             <div className="nav-mobile">
@@ -33,16 +33,16 @@ function Home() {
             </div>
             <ul className="nav-list">
               <li>
-                <Link to="/fashion">fashion</Link>
+                <Link to="/fashion">FASHION</Link>
               </li>
               <li>
-                <Link to="/health">Health & beauty</Link>
+                <Link to="/health">HEALTH & BEAUTY</Link>
               </li>
               <li>
-                <Link to="/electronics">Electronics</Link>
+                <Link to="/electronics">ELECTRONICS</Link>
               </li>
               <li>
-                <Link to="/groceries">Groceries</Link>
+                <Link to="/groceries">GROCERIES</Link>
               </li>
               <li>
                 <Link style={{ textTransform: "capitalize" }}>
@@ -61,7 +61,7 @@ function Home() {
 
               <li className="border_ccc">
                 <Link style={{ textTransform: "capitalize" }}>
-                  Account{" "}
+                  ACCOUNT{" "}
                   <span>
                     {" "}
                     <FaUser />
@@ -70,7 +70,7 @@ function Home() {
               </li>
               <li>
                 <Link style={{ textTransform: "capitalize" }}>
-                  Cart{" "}
+                  CART{" "}
                   <span>
                     {" "}
                     <FaShoppingCart />

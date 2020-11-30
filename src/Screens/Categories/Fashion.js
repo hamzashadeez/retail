@@ -1,9 +1,10 @@
-import React, {useState, useContext} from "react";
+import React, { useState, useContext } from "react";
 import { DataContext } from "../../Context/DataContext";
 import { FaArrowLeft } from "react-icons/fa";
-import ProductCard from '../../Components/ProductCard'
+import ProductCard from "../../Components/ProductCard";
+import { Link } from "react-router-dom";
 function Fashion() {
-    const [data, setData] = useContext(DataContext);
+  const [data, setData] = useContext(DataContext);
   return (
     <div style={{ flex: 1, width: "100%", height: "100vh" }}>
       <div
@@ -16,8 +17,10 @@ function Fashion() {
           color: "#fff",
         }}
       >
-        <FaArrowLeft />
-        <h1 style={{ fontSize: "20px", marginLeft: "20px", color: "white" }}>
+        <Link to="/" style={{color: '#fff', marginRight: '20px'}}>
+          <FaArrowLeft />
+        </Link>
+        <h1 style={{ fontSize: "20px",margin: 0, marginLeft: "20px", color: "white", textAlign: 'center' }}>
           FASHION
         </h1>
       </div>

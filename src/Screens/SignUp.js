@@ -74,7 +74,7 @@ function SignUp() {
                 <input
                   type="text"
                   placeholder="First name"
-                  className="form-control form-control-sm"
+                  className="form-control form-control-sm mb-1"
                   id="dsf"
                   aria-describedby="first"
                   value={first}
@@ -86,7 +86,7 @@ function SignUp() {
                 <input
                   type="text"
                   placeholder="Last name"
-                  className="form-control form-control-sm"
+                  className="form-control form-control-sm mb-1"
                   id="oopo"
                   aria-describedby="last"
                   value={last}
@@ -98,7 +98,7 @@ function SignUp() {
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="form-control form-control-sm"
+                  className="form-control form-control-sm mb-1"
                   id=""
                   aria-describedby="password"
                   value={email}
@@ -110,7 +110,7 @@ function SignUp() {
                 <input
                   type="password"
                   placeholder="Create a password"
-                  className="form-control form-control-sm"
+                  className="form-control form-control-sm "
                   id="psdddd"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -127,7 +127,7 @@ function SignUp() {
                     setVendor(e.target.checked);
                   }}
                 />
-                Vendor
+                Register As a Vendor
                 {/* <a href="#">Signed in </a> <br> Uncheck if using a public device. */}
               </div>
 

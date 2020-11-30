@@ -35,7 +35,7 @@ function Login() {
                   <input
                     type="email"
                     placeholder="Email address"
-                    className="form-control form-control-sm"
+                    className="form-control form-control-sm mb-1"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelqp"
                     value={email}
@@ -47,7 +47,7 @@ function Login() {
                   <input
                     type="password"
                     placeholder="password"
-                    className="form-control form-control-sm"
+                    className="form-control form-control-sm mb-1"
                     id="exampleInputPassword1"
                     value={password}
                     onChange={(e)=>setPassword(e.target.value)}
