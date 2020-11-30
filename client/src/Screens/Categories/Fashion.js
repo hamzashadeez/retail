@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import { DataContext } from "../../Context/DataContext";
 import { FaArrowLeft } from "react-icons/fa";
-
+import ProductCard from '../../Components/ProductCard'
 function Fashion() {
     const [data, setData] = useContext(DataContext);
   return (

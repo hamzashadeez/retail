@@ -4,7 +4,6 @@ import { FaShoppingCart, FaUser, FaArrowRight } from "react-icons/fa";
 import Carousel from "react-bootstrap/Carousel";
 import ProductCard from "../Components/ProductCard";
 import { DataContext } from "../Context/DataContext";
-import { db } from "../Config/firebase";
 
 // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 // import 'pure-react-carousel/dist/react-carousel.es.css';
